@@ -1,0 +1,61 @@
+
+.app-wrapper {
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: 'h h' 'n c' 'f f';
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /* grid-gap: 10px; */
+  color: #594c52;
+  font-family: "Open Sans", "Fira Sans", "Lucida Sans", "Lucida Sans Unicode", "Trebuchet MS", "Liberation Sans", "Nimbus Sans L", sans-serif;
+}
+
+.app-wrapper-content {
+  grid-area: c;
+  padding: 15px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #594c52;
+}
+
+a:hover, .activeLink{
+    color: #841e79;
+} 
+
+p {
+  margin: 0;
+}
+
+textarea, input {
+  font-family: "Open Sans", "Fira Sans", "Lucida Sans", "Lucida Sans Unicode", "Trebuchet MS", "Liberation Sans", "Nimbus Sans L", sans-serif;
+  outline: none;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 300px;
+  height: 70px;
+  resize: none;
+}
+
+button {
+  text-align: center;
+  background-color: #f4cccc;
+  border: none;
+  border-radius: 4px;
+  color: #594c52;
+  border: 1px solid #f4cccc;
+}
+
+button:hover {
+  background-color: pink;
+  border: 1px solid #841e79;
+  cursor:pointer;
+}

@@ -1,0 +1,54 @@
+.profileBlock {
+  min-height: 250px;
+  margin-bottom: 25px;
+}
+
+.profileAvatar {
+  position: relative;
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+.profileAvatar img{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  vertical-align: bottom;
+}
+
+.profileAvatar .jobIcon {
+  bottom: -50px;
+  left: -30px;
+  width: 80px;
+  height: auto;
+}
+
+.fullName {
+  font-size: 20px;
+  font-weight: bold;
+  color: #741b47;
+  margin-bottom: 6px;
+}
+
+.status {
+  font-style: italic;
+  margin-bottom: 18px;
+}
+
+.status input {
+  width: 200px;
+  font-style: italic;
+}
+
+.info {
+  font-size: 14px;
+}
+
+.info > div {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.info span {
+  width: 80px;
+}

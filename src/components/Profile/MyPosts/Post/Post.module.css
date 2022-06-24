@@ -1,0 +1,16 @@
+.item {
+    min-height: 50px;
+    padding-top: 20px;
+}
+
+.item img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    float:left;
+    margin-right: 15px;
+}
+
+.item p{
+    margin-top: 15px;
+}

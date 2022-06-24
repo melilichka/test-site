@@ -1,0 +1,24 @@
+.loginForm input {
+    width: 250px;
+    height: 26px;
+    margin: 8px 10px 8px 0;
+}
+
+
+.loginForm button {
+    vertical-align: bottom;
+    margin: 20px 20px 0 0;
+    width: 100px;
+    height: 36px;
+}
+
+.checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.checkbox label {
+    display: inline-flex;
+    align-items: baseline;
+    cursor: pointer;
+}

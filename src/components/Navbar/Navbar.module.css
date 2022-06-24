@@ -1,0 +1,21 @@
+.nav {
+    grid-area: n;
+    background-color: #f4cccc;
+    padding: 20px;
+    line-height: 1;
+    font-size: 18px;
+}
+.item {
+    padding: 5px 0;
+    
+}
+/* 
+.item a {
+    color: #594c52;
+    text-decoration: none;
+}
+
+.item .activeLink{
+    color: #841e79;
+} */
+
