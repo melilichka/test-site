@@ -1,21 +1,22 @@
 .formControl.error textarea,
 .formControl.error input {
-  border: 1px solid #741b47;
 }
 
 .formControl.error span {
-  color:#741b47;
+  color:rgb(27, 145, 223);
 } 
 .formSummaryError {
   display: inline-flex;
-  border: 1px solid #741b47;
   padding: 3px;
-  color: #741b47;
+  color: rgb(27, 145, 223);
+}
+:root {
+  --form-control-color: rgb(225, 228, 229);;
 }
 input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
-  background-color: #fff;
+  background-color: black;
   margin: 0;
   font: inherit;
   color: currentColor;
@@ -36,7 +37,6 @@ input[type="checkbox"]::before {
   transform: scale(0);
   transition: 120ms transform ease-in-out;
   box-shadow: inset 1em 1em var(--form-control-color);
-  background-color: #741b47;
   transform-origin: bottom left;
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 

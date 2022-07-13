@@ -27,7 +27,7 @@ const LoginForm = (props) => {
         component={Input}
         validate={[required]}
         type={'password'}
-        placeholder={'password...'} />
+        placeholder={'Password...'} />
       </div>
       <div className={loginStyle.checkbox}>
         <label><Field

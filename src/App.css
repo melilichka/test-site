@@ -1,31 +1,45 @@
-
+body {
+  background-color: #000000;
+  line-height: 1;
+  box-sizing: border-box;
+}
 .app-wrapper {
-  width: 1200px;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   display: grid;
+  font-size: 16px;
   grid-template-areas: 'h h' 'n c' 'f f';
-  grid-template-rows: 80px 1fr;
-  grid-template-columns: 2fr 10fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 3fr 9fr;
   /* grid-gap: 10px; */
-  color: #594c52;
+  color: rgb(225, 228, 229);
   font-family: "Open Sans", "Fira Sans", "Lucida Sans", "Lucida Sans Unicode", "Trebuchet MS", "Liberation Sans", "Nimbus Sans L", sans-serif;
 }
 
 .app-wrapper-content {
   grid-area: c;
-  padding: 15px;
+  padding: 20px 20px 20px 0;
 }
 
 
 a{
     text-decoration: none;
-    color: #594c52;
+    color:  rgb(225, 228, 229);
 }
 
-a:hover, .activeLink{
-    color: #841e79;
+
+.activeLink{
+    color: rgb(21, 126, 196);
 } 
+
+.preloader {
+  position: absolute;
+  top: 50%;
+  margin-top: -200px;
+  left:50%;
+  margin-left: -200px;
+}
 
 p {
   margin: 0;
@@ -33,10 +47,18 @@ p {
 
 textarea, input {
   font-family: "Open Sans", "Fira Sans", "Lucida Sans", "Lucida Sans Unicode", "Trebuchet MS", "Liberation Sans", "Nimbus Sans L", sans-serif;
+  color: rgb(225, 228, 229);
   outline: none;
-  font-size: 14px;
-  border: 1px solid grey;
-  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(32, 35, 39);
+  background-color: rgb(32, 35, 39);
+  /* box-shadow: rgb(255 255 255 / 25%) 0px 0px 13px; */
+  border-radius: 14px;
+}
+
+textarea:focus, input:focus {
+  border-color: rgb(29, 155, 240);
 }
 
 textarea {
@@ -47,15 +69,33 @@ textarea {
 
 button {
   text-align: center;
-  background-color: #f4cccc;
+  background-color: rgb(21, 126, 196);
   border: none;
-  border-radius: 4px;
-  color: #594c52;
-  border: 1px solid #f4cccc;
+  border-radius: 50px;
+  padding-left: 16px;
+    padding-right: 16px;
+    min-width: 36px;
+    min-height: 36px;
+  color:  rgb(225, 228, 229);
+  border: 1px solid #000000;
+  font-size: 16px;
 }
 
 button:hover {
-  background-color: pink;
-  border: 1px solid #841e79;
+  background-color: rgb(18, 110, 171);
+  border: 1px solid #000000;
   cursor:pointer;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(190, 194, 198, 0.9);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(190, 194, 198, 0.9);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgba(190, 194, 198, 0.9);
 }

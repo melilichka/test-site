@@ -29,7 +29,7 @@ const ProfileInfo = (props) => {
 
     return (
         <div>
-        
+
             <div className={style.profileBlock}>
 
                 <div className={style.profileAvatar}>
@@ -39,7 +39,10 @@ const ProfileInfo = (props) => {
 
                 <div className={style.fullName}>{fullName}</div>
 
-                <ProfileStatus status={props.status} updateAuthStatus={props.updateAuthStatus} />
+                <ProfileStatus
+                    status={props.status}
+                    updateAuthStatus={props.updateAuthStatus}
+                    routerUserId={props.routerUserId} />
 
                 <div className={style.info}>
                     {aboutMe ? <div><span>About me: </span><p>{aboutMe}</p></div> : null}

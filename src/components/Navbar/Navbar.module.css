@@ -1,21 +1,62 @@
 .nav {
     grid-area: n;
-    background-color: #f4cccc;
     padding: 20px;
-    line-height: 1;
-    font-size: 18px;
+    font-size: 24px;
 }
 .item {
-    padding: 5px 0;
+    padding-top: 5px;
     
 }
-/* 
 .item a {
-    color: #594c52;
-    text-decoration: none;
+    display: inline-block;
+    min-width: 64px;
+    min-height: 64px;
+    padding-left: 95px;
+    padding-right: 15px;
+    width: 100%;
+    box-sizing: border-box;
+
 }
 
-.item .activeLink{
-    color: #841e79;
-} */
+.item a:hover {
+    background-color: rgba(231, 233, 234, 0.1);
+    border-radius: 50px;
+}
 
+
+.profileStyle {
+    background: url('../../assets/images/profileIcon.svg') no-repeat 15px center;
+}
+.dialogStyle {
+    background: url('../../assets/images/dialogIcon.svg') no-repeat 20px center;
+}
+.usersStyle {
+    background: url('../../assets/images/usersIcon.svg') no-repeat 2px -12px;
+}
+
+.activeLink {
+    color: rgb(21, 126, 196);
+}
+.activeLink.profileStyle {
+    background-image: url('../../assets/images/profileIconBlue.svg');
+}
+.activeLink.dialogStyle {
+    background-image: url('../../assets/images/dialogIconBlue.svg');
+}
+.activeLink.usersStyle {
+    background-image: url('../../assets/images/usersIconBlue.svg');
+}
+
+.item a div{
+    padding-top: 20px;
+}
+
+.copyright {
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    padding: 20px 40px;
+    width: 15%;
+    font-size: 14px;
+    color:rgba(190, 194, 198, 0.9)
+}

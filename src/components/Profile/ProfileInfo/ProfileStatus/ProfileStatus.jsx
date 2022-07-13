@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import style from '.././ProfileInfo.module.css';
 
 const ProfileStatus = (props) => {
-
+  
   let [editMode, setEditMode] = useState(false);
   let [status, setStatus] = useState(props.status);
 
@@ -24,12 +24,13 @@ const ProfileStatus = (props) => {
 
   return (
     <div className={style.status}>
-      {!editMode &&
+      {props.routerUserId && <span>{props.status}</span>}
+      {!props.routerUserId && !editMode &&
         <div>
           <span onDoubleClick={activateEditMode}>{props.status || 'Set status'}</span>
-        </div>
-      }
-      {editMode &&
+        </div>}
+      
+      {!props.routerUserId && editMode &&
         <div>
           <input onChange={onStatusChange}
             autoFocus={true}

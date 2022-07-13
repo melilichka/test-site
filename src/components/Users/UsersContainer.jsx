@@ -36,7 +36,7 @@ class UsersContainer extends React.Component {
     render() {
         return <>
             {this.props.isShowPreloader
-                ? <Preloader style={{ backgroundColor: 'white', width: '400px', height: '400px' }} />
+                ? <Preloader style={{ backgroundColor: '#000000'}} />
                 : <Users
                     users={this.props.users}
                     usersTotalCount={this.props.usersTotalCount}

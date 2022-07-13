@@ -25,7 +25,7 @@ const Users = (props) => {
       <div className={style.pageNumbers}>
 
         {(props.userListCurrentPage > 1)
-          ? <span onClick={() => { props.onPageNumberClick(props.userListCurrentPage - 1) }}>Previous</span>
+          ? <span className={style.pageChangeButton} onClick={() => { props.onPageNumberClick(props.userListCurrentPage - 1) }}>Previous</span>
           : null
         }
 
@@ -41,7 +41,7 @@ const Users = (props) => {
         }
 
         {(props.userListCurrentPage < maxPageNumber)
-          ? <span onClick={() => { props.onPageNumberClick(props.userListCurrentPage + 1) }}>Next</span>
+          ? <span className={style.pageChangeButton} onClick={() => { props.onPageNumberClick(props.userListCurrentPage + 1) }}>Next</span>
           : null
         }
       </div>
@@ -52,10 +52,11 @@ const Users = (props) => {
 
             <NavLink to={'/profile/' + u.id}>
               <img src={u.photos.small ? u.photos.small : noAvatar} alt='' />
+              <span className={style.itemName}>{u.name}</span>
             </NavLink>
             <div>
-              <p>{u.name}</p>
-              <p>{u.status}</p>
+              
+              <p className={style.itemStatus} >{u.status}</p>
 
               {
                 u.followed

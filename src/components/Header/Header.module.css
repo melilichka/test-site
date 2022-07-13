@@ -1,19 +1,22 @@
 .header {
     grid-area: h;
-    background-color: #741b47;
-    padding: 10px 20px;
+    padding: 10px 47px 0px;
 }
 
 .header img {
-    width: 60px;
-    border-radius: 30px;
+    width: 50px;
+}
+.header img:hover {
+    cursor:pointer;
 }
 
 .loginBlock {
     float:right;
-    color: #f4cccc;
 
 }
 .loginBlock a {
-    color: #f4cccc;
+    color: rgb(225, 228, 229);
+}
+.loginBlock button {
+    margin-left: 15px;
 }

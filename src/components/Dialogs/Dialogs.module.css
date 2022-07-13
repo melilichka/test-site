@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 3fr 7fr;
     line-height: 1;
+    min-width: 150px;
 }
 
 .dialog img {
@@ -16,15 +17,23 @@
     padding-right: 20px;
 }
 
-.dialog {
-    padding: 8px 0;
+.dialog a {
+    width: 80%;
+    display: inline-block;
+    padding: 10px 10px;
+    min-width: 159px;
+}
+
+.dialog a:hover {
+    background-color: rgba(231, 233, 234, 0.1);
+    border-radius: 50px;
 }
 
 .dialog:first-child {
     padding-top: 5px;
 }
 .messages {
-    padding: 35px 20px 20px;
+    padding: 10px 0px 15px;
 }
 .messageItem {
     padding: 7px 0;

@@ -68,8 +68,8 @@ const MyPosts = memo(props=> {
     }
     return (
         <div className={style.postBlock}>
-            <h3>My posts</h3>
-            <AddNewPostReduxForm onSubmit={addPostSubmit}/>
+            <h3>{props.routerUserId ? 'Posts': 'My posts'}</h3>
+            {!props.routerUserId && <AddNewPostReduxForm onSubmit={addPostSubmit}/>}
             <div className={style.posts}>
                 {postsElements}
             </div>

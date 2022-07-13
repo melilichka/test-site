@@ -1,26 +1,49 @@
 .userList img {
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
+    width: 66px;
+    height: 66px;
+    border-radius: 50px;
 }
 .pageNumbers {
     margin-bottom: 20px;
 }
+.pageNumbers span:hover{
+   cursor: pointer;
+   text-decoration:underline;
+}
 .pageNumbers .selected {
     font-weight: bold;
-    color: #741b47;
+    color: rgb(21, 126, 196);;
 }
 .pageNumbers .page {
     margin: 0 7px;
 }
-.item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+
+.pageChangeButton {
+    margin: 0 20px;
 }
+
+.item {
+    margin-bottom: 26px;
+    overflow: hidden;
+}
+
 .item a {
     margin-right: 20px;
 }
+.item a img{
+    float:left;
+    margin-right: 20px;
+}
 .item button {
-    margin-top: 5px;
+    margin-top: 8px;
+}
+.itemName {
+    font-weight: bold;
+}
+.itemName:hover {
+    text-decoration: underline;
+}
+.itemStatus {
+    font-style: italic;
+    font-size: 14px;
 }

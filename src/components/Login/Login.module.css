@@ -8,8 +8,6 @@
 .loginForm button {
     vertical-align: bottom;
     margin: 20px 20px 0 0;
-    width: 100px;
-    height: 36px;
 }
 
 .checkbox input[type="checkbox"] {

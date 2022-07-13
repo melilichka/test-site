@@ -1,9 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import style from './Header.module.css';
-import logo from '../../assets/images/logo2.jpeg';
-// import Preloader from '../Common/Preloader/Preloader';
-// import noAvatar from '../../assets/images/noavatar.png';
+import logo from '../../assets/images/logo.svg';
 
 const Header = (props) => {
 
@@ -12,10 +10,13 @@ const Header = (props) => {
     // }
 
     // let smallPhoto = props.authProfile.photos.small;
-    
+
     return (
         <header className={style.header}>
-            <img src= {logo} alt='' />
+            <NavLink to={'/profile'} activeClassName='activeLink'>
+                <img src={logo} alt='' />
+            </NavLink>
+
 
             <div className={style.loginBlock}>
                 {/* {
@@ -27,7 +28,7 @@ const Header = (props) => {
                     {
                         props.isAuth
                             ? <div>{props.login} <button type='button' onClick={props.authLogOut}>LogOut</button></div>
-                            : <NavLink to={'/login'}>login</NavLink>
+                            : <NavLink to={'/login'}>Login</NavLink>
                     }
                 </span>
             </div>
