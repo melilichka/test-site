@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/test-site/static/css/main.5afcaa04.chunk.css",
-    "main.js": "/test-site/static/js/main.a6199b3f.chunk.js",
-    "main.js.map": "/test-site/static/js/main.a6199b3f.chunk.js.map",
-    "runtime-main.js": "/test-site/static/js/runtime-main.b3a263a3.js",
-    "runtime-main.js.map": "/test-site/static/js/runtime-main.b3a263a3.js.map",
-    "static/js/2.3f83cbc1.chunk.js": "/test-site/static/js/2.3f83cbc1.chunk.js",
-    "static/js/2.3f83cbc1.chunk.js.map": "/test-site/static/js/2.3f83cbc1.chunk.js.map",
-    "static/js/3.c1d85af8.chunk.js": "/test-site/static/js/3.c1d85af8.chunk.js",
-    "static/js/3.c1d85af8.chunk.js.map": "/test-site/static/js/3.c1d85af8.chunk.js.map",
+    "main.css": "/test-site/static/css/main.a990dc09.chunk.css",
+    "main.js": "/test-site/static/js/main.3fba28ac.chunk.js",
+    "main.js.map": "/test-site/static/js/main.3fba28ac.chunk.js.map",
+    "runtime-main.js": "/test-site/static/js/runtime-main.f0768442.js",
+    "runtime-main.js.map": "/test-site/static/js/runtime-main.f0768442.js.map",
+    "static/js/2.85797851.chunk.js": "/test-site/static/js/2.85797851.chunk.js",
+    "static/js/2.85797851.chunk.js.map": "/test-site/static/js/2.85797851.chunk.js.map",
+    "static/js/3.87c17de3.chunk.js": "/test-site/static/js/3.87c17de3.chunk.js",
+    "static/js/3.87c17de3.chunk.js.map": "/test-site/static/js/3.87c17de3.chunk.js.map",
     "index.html": "/test-site/index.html",
-    "static/css/main.5afcaa04.chunk.css.map": "/test-site/static/css/main.5afcaa04.chunk.css.map",
-    "static/js/2.3f83cbc1.chunk.js.LICENSE.txt": "/test-site/static/js/2.3f83cbc1.chunk.js.LICENSE.txt",
-    "static/media/lookingForAJobIcon1.5cdad2c1.png": "/test-site/static/media/lookingForAJobIcon1.5cdad2c1.png",
+    "static/css/main.a990dc09.chunk.css.map": "/test-site/static/css/main.a990dc09.chunk.css.map",
+    "static/js/2.85797851.chunk.js.LICENSE.txt": "/test-site/static/js/2.85797851.chunk.js.LICENSE.txt",
+    "static/media/Navbar.module.css": "/test-site/static/media/usersIconBlue.a3f0ea10.svg",
+    "static/media/logo.4f1a4aa6.svg": "/test-site/static/media/logo.4f1a4aa6.svg",
+    "static/media/lookingForAJobIcon1.b49d2c08.png": "/test-site/static/media/lookingForAJobIcon1.b49d2c08.png",
     "static/media/preloader.ea21e150.svg": "/test-site/static/media/preloader.ea21e150.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b3a263a3.js",
-    "static/js/2.3f83cbc1.chunk.js",
-    "static/css/main.5afcaa04.chunk.css",
-    "static/js/main.a6199b3f.chunk.js"
+    "static/js/runtime-main.f0768442.js",
+    "static/js/2.85797851.chunk.js",
+    "static/css/main.a990dc09.chunk.css",
+    "static/js/main.3fba28ac.chunk.js"
   ]
 }
