@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import { Route, withRouter } from 'react-router-dom';
+import { Redirect, Route, withRouter } from 'react-router-dom';
 import DialogsContainer from './components/Dialogs/DialogsContainer';
 import UsersContainer from './components/Users/UsersContainer';
 import ProfileContainer from './components/Profile/ProfileContainer';
@@ -12,8 +12,6 @@ import { connect } from 'react-redux';
 import Preloader from './components/Common/Preloader/Preloader';
 import { compose } from 'redux';
 import { initializeApp } from './Redux/appReducer';
-import Footer from './components/Footer/Footer';
-
 
 class App extends Component {
 
@@ -26,13 +24,13 @@ class App extends Component {
     if (!this.props.initialized) {
       return <Preloader />
     }
-
     return (
       <div className='app-wrapper'>
         <HeaderContainer />
-        <Navbar />
+        {this.props.isAuth && <Navbar />}
         <div className='app-wrapper-content'>
 
+          <Route exact path='/'><Redirect to='/profile' /></Route>
           <Route path='/profile/:userId?' render={() => <ProfileContainer />} />
           <Route path='/users' render={() => <UsersContainer />} />
           <Route path='/login' render={() => <Login />} />
@@ -40,7 +38,6 @@ class App extends Component {
 
           {/* <Route exact path='/dialogs' component={Dialogs} /> */}
         </div>
-        <Footer />
       </div>
     );
   }
@@ -49,6 +46,7 @@ class App extends Component {
 
 let mapStateToProps = (state) => ({
   initialized: state.app.initialized,
+  isAuth: state.auth.isAuth,
 })
 
 export default compose(
