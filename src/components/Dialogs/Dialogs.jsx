@@ -1,4 +1,5 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 import { Field, reduxForm } from 'redux-form';
 import DialogItems from './DialogItems/DialogItems';
 import style from './Dialogs.module.css';
@@ -19,18 +20,37 @@ const AddMessageForm = (props) => {
 const AddMessageReduxForm = reduxForm({ form: 'dialogMessageForm' })(AddMessageForm);
 
 const Dialogs = (props) => {
+    let selectedDialogId = props.match.params.dialogId;
+
+    const redirectToFirstDialog = () => {
+        let firstDialog = props.dialogsPage.dialogs[0];
+        if (firstDialog) {
+            return <Redirect to={'/dialogs/'+ firstDialog.id}/>
+        }
+    }
+
+    if (!selectedDialogId) {
+        return redirectToFirstDialog();
+    }
 
     let dialogsElements = props.dialogsPage.dialogs
         .map(d => <DialogItems id={d.id} avatar={d.avatar} name={d.name} key={d.id} />);
-    let messagesElements = props.dialogsPage.messages
-        .map(m => <Message id={m.id} message={m.message} key={m.id} />);
 
+    let selectedDialog = props.dialogsPage.dialogs.filter(item => item.id == selectedDialogId)[0];
+
+    let messagesElements=[];
+    if (selectedDialog) {
+        messagesElements = selectedDialog.messages.map(m => <Message id={m.id} message={m.message} key={m.id} />);
+
+    } else {
+        return redirectToFirstDialog();
+    }
     let sendNewMessage = (formData) => {
         if (formData.newMessageBody) {
-            props.addNewMessage(formData.newMessageBody);
+            props.addNewMessage(selectedDialogId, formData.newMessageBody);
             formData.newMessageBody = '';
         }
-        
+
     }
     return (
         <div className={style.dialogs}>

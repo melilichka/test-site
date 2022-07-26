@@ -27,7 +27,7 @@ const ProfileStatus = (props) => {
       {props.routerUserId && <span>{props.status}</span>}
       {!props.routerUserId && !editMode &&
         <div>
-          <span onDoubleClick={activateEditMode}>{props.status || 'Set status'}</span>
+          <span onClick={activateEditMode}>{props.status || 'Set status'}</span>
         </div>}
       
       {!props.routerUserId && editMode &&

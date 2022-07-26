@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   render() {
-    
+
     if (!this.props.initialized) {
       return <Preloader />
     }
@@ -34,9 +34,7 @@ class App extends Component {
           <Route path='/profile/:userId?' render={() => <ProfileContainer />} />
           <Route path='/users' render={() => <UsersContainer />} />
           <Route path='/login' render={() => <Login />} />
-          <Route path='/dialogs' render={() => <DialogsContainer />} />
-
-          {/* <Route exact path='/dialogs' component={Dialogs} /> */}
+          <Route path='/dialogs/:dialogId?' render={() => <DialogsContainer />} />
         </div>
       </div>
     );
