@@ -9,9 +9,9 @@ const SET_STATUS = 'SET_STATUS';
 
 let initialState = {
   posts: [
-    { id: 1, avatar: avatarIcon, likesCount: 14, message: 'A koala is my favorite animal', },
+    { id: 1, avatar: avatarIcon, likesCount: 14, message: 'HTML,CSS', },
     { id: 2, avatar: avatarIcon, likesCount: 10, message: 'What a wonderful world!', },
-    { id: 3, avatar: '', likesCount: 30, message: 'Every life matters. Even the smallest.', },
+    { id: 3, avatar: '', likesCount: 30, message: 'React.js for beginner', },
   ],
   // newPostText: '',
   userProfile: null,
